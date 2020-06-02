@@ -25,6 +25,8 @@ namespace OnlineRecipes.Models
         {
         }
 
+        public DbSet<Recipe> Recipe { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

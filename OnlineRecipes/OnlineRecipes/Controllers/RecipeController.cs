@@ -3,21 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using OnlineRecipes.Models;
 
 namespace OnlineRecipes.Controllers
 {
     public class RecipeController : Controller
     {
+        
+        private ApplicationDbContext db = new ApplicationDbContext();
+
         // GET: Recipe
         public ActionResult Index()
         {
-            return View();
+            var recipes = db.Recipe.ToList();
+
+            return View(recipes);
         }
 
         // GET: Recipe/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(int? id)
         {
-            return View();
+           /* if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }*/
+
+            var recipe = db.Recipe.Find(id);
+            if (recipe == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(recipe);
+          
         }
 
         // GET: Recipe/Create
@@ -28,13 +46,19 @@ namespace OnlineRecipes.Controllers
 
         // POST: Recipe/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Recipe recipe)
         {
             try
             {
-                // TODO: Add insert logic here
+                if (ModelState.IsValid)
+                {
+                    db.Recipe.Add(recipe);
+                    db.SaveChanges();
 
-                return RedirectToAction("Index");
+                    return RedirectToAction("Index");
+                }
+
+                return View(recipe);
             }
             catch
             {
