@@ -66,6 +66,8 @@ namespace OnlineRecipes.Controllers
         // GET: Recipe/Edit/5
         public ActionResult Edit(int? id)
         {
+
+
             var recipe = db.Recipe.Find(id);
 
             if (recipe == null)
@@ -107,25 +109,43 @@ namespace OnlineRecipes.Controllers
         }
 
         // GET: Recipe/Delete/5
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int? id)
         {
-            return View();
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+
+         
+                var recipe = db.Recipe.Find(id);
+
+                if (recipe == null)
+                {
+                    return HttpNotFound();
+                }
+
+                return View(recipe);
+           
+           
         }
 
-        // POST: Recipe/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
+       
 
-                return RedirectToAction("Index");
-            }
-            catch
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Recipe recipe = db.Recipe.Find(id);
+
+            if (recipe == null)
             {
-                return View();
+                return HttpNotFound();
             }
+
+            db.Recipe.Remove(recipe);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
