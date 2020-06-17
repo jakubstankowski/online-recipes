@@ -23,7 +23,11 @@ namespace OnlineRecipes.Controllers
         // GET: Recipe/Details/5
         public ActionResult Details(int? id)
         {
-         
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
 
             var recipe = db.Recipe.Find(id);
             if (recipe == null)
@@ -45,9 +49,7 @@ namespace OnlineRecipes.Controllers
         [HttpPost]
         public ActionResult Create(Recipe recipe)
         {
-            try
-            {
-                if (ModelState.IsValid)
+            if (ModelState.IsValid)
                 {
                     db.Recipe.Add(recipe);
                     db.SaveChanges();
@@ -56,16 +58,16 @@ namespace OnlineRecipes.Controllers
                 }
 
                 return View(recipe);
-            }
-            catch
-            {
-                return View();
-            }
+   
         }
 
         // GET: Recipe/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
 
 
             var recipe = db.Recipe.Find(id);
