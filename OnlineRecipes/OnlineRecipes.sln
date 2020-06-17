@@ -7,20 +7,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineRecipes", "OnlineReci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "..\..\..\INNE\C#\Asp Net\crud-windows-tutorial\C#\ContosoUniversity\ContosoUniversity.csproj", "{264E21D6-4024-4A53-B1BE-1CD42F3348FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidly", "..\..\..\INNE\C#\Asp Net\vidly-mvc-5\Vidly\Vidly.csproj", "{295707EF-F8B0-4480-8538-B47844A263B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Testing|Any CPU = Testing|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Testing|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Testing|Any CPU.Build.0 = Release|Any CPU
 		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Testing|Any CPU.ActiveCfg = Release|Any CPU
+		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Testing|Any CPU.Build.0 = Release|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{295707EF-F8B0-4480-8538-B47844A263B4}.Testing|Any CPU.Build.0 = Testing|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
