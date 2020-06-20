@@ -5,12 +5,22 @@ using System.Web;
 using System.Web.Mvc;
 using OnlineRecipes.Models;
 
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+
 namespace OnlineRecipes.Controllers
 {
     public class RecipeController : Controller
     {
-        
+
         private ApplicationDbContext db = new ApplicationDbContext();
+       
 
         // GET: Recipe
         public ActionResult Index()
@@ -36,7 +46,7 @@ namespace OnlineRecipes.Controllers
             }
 
             return View(recipe);
-          
+
         }
 
         // GET: Recipe/Create
@@ -50,15 +60,15 @@ namespace OnlineRecipes.Controllers
         public ActionResult Create(Recipe recipe)
         {
             if (ModelState.IsValid)
-                {
-                    db.Recipe.Add(recipe);
-                    db.SaveChanges();
+            {
+                db.Recipe.Add(recipe);
+                db.SaveChanges();
 
-                    return RedirectToAction("Index");
-                }
+                return RedirectToAction("Index");
+            }
 
-                return View(recipe);
-   
+            return View(recipe);
+
         }
 
         // GET: Recipe/Edit/5
@@ -119,20 +129,20 @@ namespace OnlineRecipes.Controllers
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
 
-         
-                var recipe = db.Recipe.Find(id);
 
-                if (recipe == null)
-                {
-                    return HttpNotFound();
-                }
+            var recipe = db.Recipe.Find(id);
 
-                return View(recipe);
-           
-           
+            if (recipe == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(recipe);
+
+
         }
 
-       
+
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

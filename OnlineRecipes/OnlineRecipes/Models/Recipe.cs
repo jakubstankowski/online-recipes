@@ -22,5 +22,11 @@ namespace OnlineRecipes.Models
         [Required]
         [Display(Name = "Rating")]
         public int Rating { get; set; }
+
+        public virtual ApplicationUser User { get; set; }
+
+     /*   [Required]
+        public string ApplicationUserId { get; set; }*/
+
     }
 }

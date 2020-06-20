@@ -126,3 +126,4 @@ P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\Onl
 P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.Migrations.InitialCreate.resources
 P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.csproj.GenerateResource.cache
 P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.Migrations.AddRecipe.resources
+P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.Migrations.AddUsertorecipe.resources
