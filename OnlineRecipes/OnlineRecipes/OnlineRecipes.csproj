@@ -182,9 +182,9 @@
     <Compile Include="Migrations\202006012001279_AddRecipe.Designer.cs">
       <DependentUpon>202006012001279_AddRecipe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202006201248508_Add User to recipe.cs" />
-    <Compile Include="Migrations\202006201248508_Add User to recipe.Designer.cs">
-      <DependentUpon>202006201248508_Add User to recipe.cs</DependentUpon>
+    <Compile Include="Migrations\202006211414160_Add User to recipe.cs" />
+    <Compile Include="Migrations\202006211414160_Add User to recipe.Designer.cs">
+      <DependentUpon>202006211414160_Add User to recipe.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -280,8 +280,8 @@
     <EmbeddedResource Include="Migrations\202006012001279_AddRecipe.resx">
       <DependentUpon>202006012001279_AddRecipe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006201248508_Add User to recipe.resx">
-      <DependentUpon>202006201248508_Add User to recipe.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202006211414160_Add User to recipe.resx">
+      <DependentUpon>202006211414160_Add User to recipe.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

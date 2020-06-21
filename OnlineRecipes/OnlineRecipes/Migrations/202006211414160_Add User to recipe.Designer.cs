@@ -13,7 +13,7 @@ namespace OnlineRecipes.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202006201248508_Add User to recipe"; }
+            get { return "202006211414160_Add User to recipe"; }
         }
         
         string IMigrationMetadata.Source

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 using OnlineRecipes.Models;
 
 
@@ -59,13 +60,24 @@ namespace OnlineRecipes.Controllers
         [HttpPost]
         public ActionResult Create(Recipe recipe)
         {
-            if (ModelState.IsValid)
-            {
-                db.Recipe.Add(recipe);
-                db.SaveChanges();
+            /*var userId = User.Identity.GetUserId();
+            recipe.User = User;
+*/
 
-                return RedirectToAction("Index");
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    db.Recipe.Add(recipe);
+                    db.SaveChanges();
+
+                    return RedirectToAction("Index");
+                }
+            } catch(Exception e)
+            {
+                throw e;
             }
+            
 
             return View(recipe);
 
