@@ -60,14 +60,17 @@ namespace OnlineRecipes.Controllers
         [HttpPost]
         public ActionResult Create(Recipe recipe)
         {
-            /*var userId = User.Identity.GetUserId();
-            recipe.User = User;
-*/
 
+           
+            /* var userId = User.Identity;
+             var user = db.User.Find(userId);
+             recipe.User = user;
+ */
             try
             {
                 if (ModelState.IsValid)
                 {
+                    recipe.UserId = User.Identity.GetUserId();
                     db.Recipe.Add(recipe);
                     db.SaveChanges();
 
