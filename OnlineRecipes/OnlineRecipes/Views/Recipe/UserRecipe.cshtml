@@ -1,0 +1,28 @@
+﻿@model IEnumerable<OnlineRecipes.Models.Recipe>
+
+
+@{
+    ViewBag.Title = "UserRecipe";
+}
+
+<h2>UserRecipe</h2>
+
+
+<div class="grid">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <p>
+                @Html.DisplayFor(modelItem => item.Title)
+            </p>
+            <p>
+                @Html.DisplayFor(modelItem => item.Description)
+            </p>
+            <p>
+                Rating: @Html.DisplayFor(modelItem => item.Rating) / 5
+            </p>
+        </div>
+
+
+    }
+</div>

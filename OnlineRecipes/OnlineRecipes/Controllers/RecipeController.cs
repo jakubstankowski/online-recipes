@@ -7,13 +7,6 @@ using Microsoft.AspNet.Identity;
 using OnlineRecipes.Models;
 
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World!");
-    }
-}
 
 namespace OnlineRecipes.Controllers
 {
@@ -29,6 +22,17 @@ namespace OnlineRecipes.Controllers
             var recipes = db.Recipe.ToList();
 
             return View(recipes);
+        }
+
+
+
+        public ActionResult UserRecipe()
+        {
+            var userId = User.Identity.GetUserId();
+            var recipe = db.Recipe.Where(c => c.UserId == userId).ToList();
+            return View(recipe);
+
+
         }
 
         // GET: Recipe/Details/5

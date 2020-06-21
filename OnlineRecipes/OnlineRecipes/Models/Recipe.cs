@@ -26,17 +26,7 @@ namespace OnlineRecipes.Models
         public virtual ApplicationUser User { get; set; }
 
         public string UserId { get; set; }
-/*
-        [Required]
-        public string ApplicationUserId { get; set; }*/
 
-       /* public Recipe(string title, string description, int rating, string applicationUserId)
-        {
-            this.Title = title;
-            this.Description = description;
-            this.Rating = rating;
-            this.ApplicationUserId = applicationUserId;
-        }*/
 
     }
 }
