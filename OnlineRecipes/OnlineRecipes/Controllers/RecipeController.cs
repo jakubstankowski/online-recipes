@@ -25,7 +25,7 @@ namespace OnlineRecipes.Controllers
         }
 
 
-
+        [Authorize]
         public ActionResult UserRecipe()
         {
             var userId = User.Identity.GetUserId();
@@ -62,6 +62,7 @@ namespace OnlineRecipes.Controllers
 
         // POST: Recipe/Create
         [HttpPost]
+        [Authorize]
         public ActionResult Create(Recipe recipe)
         {
 
@@ -108,6 +109,7 @@ namespace OnlineRecipes.Controllers
 
         // POST: Recipe/Edit/5
         [HttpPost]
+        [Authorize]
         public ActionResult Edit(int? id, Recipe recipe)
         {
             try
@@ -138,6 +140,7 @@ namespace OnlineRecipes.Controllers
         }
 
         // GET: Recipe/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
 
@@ -163,6 +166,7 @@ namespace OnlineRecipes.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult DeleteConfirmed(int id)
         {
             Recipe recipe = db.Recipe.Find(id);
