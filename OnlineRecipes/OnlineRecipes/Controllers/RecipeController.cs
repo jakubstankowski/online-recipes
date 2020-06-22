@@ -14,7 +14,7 @@ namespace OnlineRecipes.Controllers
     {
 
         private ApplicationDbContext db = new ApplicationDbContext();
-       
+
 
         // GET: Recipe
         public ActionResult Index()
@@ -66,23 +66,19 @@ namespace OnlineRecipes.Controllers
         public ActionResult Create(Recipe recipe)
         {
 
-           
-       
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    recipe.UserId = User.Identity.GetUserId();
-                    db.Recipe.Add(recipe);
-                    db.SaveChanges();
 
-                    return RedirectToAction("UserRecipe");
-                }
-            } catch(Exception e)
+
+
+            if (ModelState.IsValid)
             {
-                throw e;
+                recipe.UserId = User.Identity.GetUserId();
+                db.Recipe.Add(recipe);
+                db.SaveChanges();
+
+                return RedirectToAction("UserRecipe");
             }
-            
+
+
 
             return View(recipe);
 
