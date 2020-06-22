@@ -66,10 +66,7 @@ namespace OnlineRecipes.Controllers
         {
 
            
-            /* var userId = User.Identity;
-             var user = db.User.Find(userId);
-             recipe.User = user;
- */
+       
             try
             {
                 if (ModelState.IsValid)
@@ -78,7 +75,7 @@ namespace OnlineRecipes.Controllers
                     db.Recipe.Add(recipe);
                     db.SaveChanges();
 
-                    return RedirectToAction("Index");
+                    return RedirectToAction("UserRecipe");
                 }
             } catch(Exception e)
             {
@@ -131,7 +128,8 @@ namespace OnlineRecipes.Controllers
                 TryUpdateModel(recipeToUpdate);
                 db.SaveChanges();
 
-                return RedirectToAction("Index");
+                return RedirectToAction("UserRecipe");
+
             }
             catch
             {
@@ -176,7 +174,8 @@ namespace OnlineRecipes.Controllers
 
             db.Recipe.Remove(recipe);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("UserRecipe");
+
         }
     }
 }
