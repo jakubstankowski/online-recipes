@@ -18,14 +18,7 @@ namespace OnlineRecipes.Migrations
         protected override void Seed(OnlineRecipes.Models.ApplicationDbContext context)
         {
 
-          /*  Recipe recipe = new Recipe("sandwich", "easy", 5, "f52e4f7c-b5b9-48bd-b0ec-2b88fd9fef31");
-            context.Recipe.AddOrUpdate(recipe);
-*/
 
-           // students.ForEach(s => context.Students.AddOrUpdate(p => p.LastName, s));
-
-
-            context.SaveChanges();
 
             //  This method will be called after migrating to the latest version.
 

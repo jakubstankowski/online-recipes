@@ -35,6 +35,6 @@ namespace OnlineRecipes.Models
         public string UserId { get; set; }
 
       
-        public string Test { get; set; }
+        
     }
 }
