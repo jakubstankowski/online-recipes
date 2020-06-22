@@ -34,15 +34,13 @@ textarea {
 }
 
 
-.recipe-image{
-    max-width: 300px;
+
+
+.card img{
+    width: 100%;
     padding: 5px;
-    text-align: center;
 }
 
-.recipe-image img{
-    width: 100%
-}
 .card {
     padding: 1rem;
     border: #ccc 0.5px solid;
