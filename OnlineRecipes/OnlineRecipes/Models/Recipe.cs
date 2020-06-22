@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.EnterpriseServices.Internal;
 using System.Linq;
 using System.Web;
 
@@ -34,6 +35,6 @@ namespace OnlineRecipes.Models
         public string UserId { get; set; }
 
       
-
+        public string Test { get; set; }
     }
 }

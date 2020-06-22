@@ -27,7 +27,7 @@ namespace OnlineRecipes.Models
 
         public DbSet<Recipe> Recipe { get; set; }
 
-        public DbSet<RecipeCategory> RecipeCategory { get; set; }
+ 
 
         public static ApplicationDbContext Create()
         {
