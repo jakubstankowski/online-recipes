@@ -190,6 +190,10 @@
     <Compile Include="Migrations\202006211437159_Add User id to recipe.Designer.cs">
       <DependentUpon>202006211437159_Add User id to recipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006220917002_Implement required range in recipe rating, and image url.cs" />
+    <Compile Include="Migrations\202006220917002_Implement required range in recipe rating, and image url.Designer.cs">
+      <DependentUpon>202006220917002_Implement required range in recipe rating, and image url.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -203,7 +207,6 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Recipe.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -290,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006211437159_Add User id to recipe.resx">
       <DependentUpon>202006211437159_Add User id to recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006220917002_Implement required range in recipe rating, and image url.resx">
+      <DependentUpon>202006220917002_Implement required range in recipe rating, and image url.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

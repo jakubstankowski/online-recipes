@@ -33,6 +33,16 @@ textarea {
     grid-gap: 1rem;
 }
 
+
+.recipe-image{
+    max-width: 300px;
+    padding: 5px;
+    text-align: center;
+}
+
+.recipe-image img{
+    width: 100%
+}
 .card {
     padding: 1rem;
     border: #ccc 0.5px solid;

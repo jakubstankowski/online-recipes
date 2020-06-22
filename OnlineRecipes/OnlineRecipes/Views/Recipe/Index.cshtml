@@ -15,6 +15,12 @@
             <h3>
                 Title: @Html.DisplayFor(modelItem => item.Title)
             </h3>
+
+            @if (!String.IsNullOrEmpty(item.ImageUrl))
+            {
+                <img src="@Url.Content(item.ImageUrl)" class="recipe-image"/>
+            }
+
             <p>
                 Rating: @Html.DisplayFor(modelItem => item.Rating) / 5
             </p>

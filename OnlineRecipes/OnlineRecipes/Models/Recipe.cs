@@ -21,7 +21,13 @@ namespace OnlineRecipes.Models
 
         [Required]
         [Display(Name = "Rating")]
+        [Range(1, 5)]
         public int Rating { get; set; }
+
+        [Display(Name = "Image Url")]
+        public string ImageUrl { get; set; }
+
+
 
         public virtual ApplicationUser User { get; set; }
 
