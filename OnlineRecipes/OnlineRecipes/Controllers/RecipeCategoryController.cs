@@ -20,12 +20,7 @@ namespace OnlineRecipes.Controllers
             return View(recipeCategory);
         }
 
-        // GET: RecipeCategory/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
+     
         // GET: RecipeCategory/Create
         public ActionResult Create()
         {
@@ -47,7 +42,7 @@ namespace OnlineRecipes.Controllers
 
 
             }
-            catch (DataException)
+            catch
             {
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
