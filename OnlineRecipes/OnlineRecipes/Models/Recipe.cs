@@ -28,13 +28,13 @@ namespace OnlineRecipes.Models
         [Display(Name = "Image Url")]
         public string ImageUrl { get; set; }
 
-
-
         public virtual ApplicationUser User { get; set; }
 
         public string UserId { get; set; }
 
-      
+
+        [Display(Name = "Category")]
+        public  RecipeCategory RecipeCategories { get; set; }
         
     }
 }

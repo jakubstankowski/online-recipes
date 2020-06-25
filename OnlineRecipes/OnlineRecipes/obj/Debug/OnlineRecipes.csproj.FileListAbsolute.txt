@@ -131,3 +131,4 @@ P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\Onl
 P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.Migrations.Implementrequiredrangeinreciperatingandimageurl.resources
 P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.Migrations.Test.resources
 P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.Migrations.Addrecipecategories.resources
+P:\PROJEKTY\htdocs\22 - ONLINE-RECIPES - MAJ 2020 C#, ASP NET\online-recipes\OnlineRecipes\OnlineRecipes\obj\Debug\OnlineRecipes.Migrations.Addrecipecategorytorecipemodel.resources

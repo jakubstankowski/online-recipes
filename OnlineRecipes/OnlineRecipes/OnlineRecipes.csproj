@@ -203,6 +203,10 @@
     <Compile Include="Migrations\202006221803078_Add recipe categories.Designer.cs">
       <DependentUpon>202006221803078_Add recipe categories.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006251754589_Add recipe category to recipe model.cs" />
+    <Compile Include="Migrations\202006251754589_Add recipe category to recipe model.Designer.cs">
+      <DependentUpon>202006251754589_Add recipe category to recipe model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -314,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006221803078_Add recipe categories.resx">
       <DependentUpon>202006221803078_Add recipe categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006251754589_Add recipe category to recipe model.resx">
+      <DependentUpon>202006251754589_Add recipe category to recipe model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

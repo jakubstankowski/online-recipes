@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineRecipes", "OnlineReci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vidly", "..\..\..\INNE\C#\Asp Net\vidly-mvc-5\Vidly\Vidly.csproj", "{295707EF-F8B0-4480-8538-B47844A263B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlipDrop", "..\..\..\INNE\C#\Asp Net\BlipDrop\BlipDrop\BlipDrop.csproj", "{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTellerMachine", "..\..\..\INNE\C#\Asp Net\bank-mvc-5\Ex_Files_ASPNETMVC5_EssT\Exercise Files\Ch9\Final\AutomatedTellerMachine\AutomatedTellerMachine.csproj", "{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}"
 EndProject
 Global
@@ -33,6 +35,14 @@ Global
 		{295707EF-F8B0-4480-8538-B47844A263B4}.Test|Any CPU.Build.0 = Testing|Any CPU
 		{295707EF-F8B0-4480-8538-B47844A263B4}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
 		{295707EF-F8B0-4480-8538-B47844A263B4}.Testing|Any CPU.Build.0 = Testing|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Test|Any CPU.Build.0 = Release|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Testing|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Testing|Any CPU.Build.0 = Release|Any CPU
 		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
