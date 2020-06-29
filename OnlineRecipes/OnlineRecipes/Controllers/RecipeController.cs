@@ -14,60 +14,18 @@ namespace OnlineRecipes.Controllers
     {
 
         private ApplicationDbContext db = new ApplicationDbContext();
-       
+
 
         // GET: Recipe
         public ActionResult Index()
         {
-           /* var states = GetAllStates();
-            
-            var model = new Recipe();
-            model.RecipeCategories = GetSelectListItems(states);*/
-            
+
             var recipes = db.Recipe.ToList();
 
 
             return View(recipes);
         }
 
-
-        private IEnumerable<string> GetAllStates()
-        {
-            return new List<string>
-            {
-                "ACT",
-                "New South Wales",
-                "Northern Territories",
-                "Queensland",
-                "South Australia",
-                "Victoria",
-                "Western Australia",
-            };
-        }
-
-        private IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<string> elements)
-        {
-            // Create an empty list to hold result of the operation
-            var selectList = new List<SelectListItem>();
-
-            // For each string in the 'elements' variable, create a new SelectListItem object
-            // that has both its Value and Text properties set to a particular value.
-            // This will result in MVC rendering each item as:
-            //     <option value="State Name">State Name</option>
-            foreach (var element in elements)
-            {
-                selectList.Add(new SelectListItem
-                {
-                    Value = element,
-                    Text = element
-                });
-                Console.WriteLine("selector list", selectList);
-
-            }
-
-
-            return selectList;
-        }
 
 
         [Authorize]
@@ -83,11 +41,6 @@ namespace OnlineRecipes.Controllers
         // GET: Recipe/Details/5
         public ActionResult Details(int? id)
         {
-            /*var states = GetAllStates();
-
-            var model = new Recipe();
-            model.RecipeCategories = GetSelectListItems(states);*/
-
 
 
             if (id == null)
@@ -110,7 +63,7 @@ namespace OnlineRecipes.Controllers
         {
             var recipe = new Recipe();
             recipe.RecipeCategories = db.RecipeCategories.ToList();
-           
+
             return View(recipe);
         }
 
@@ -120,8 +73,8 @@ namespace OnlineRecipes.Controllers
         public ActionResult Create(Recipe recipe)
         {
 
-           
-       
+
+
             try
             {
                 if (ModelState.IsValid)
@@ -132,11 +85,12 @@ namespace OnlineRecipes.Controllers
 
                     return RedirectToAction("UserRecipe");
                 }
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 throw e;
             }
-            
+
 
             return View(recipe);
 

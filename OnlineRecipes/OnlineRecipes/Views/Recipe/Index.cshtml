@@ -11,30 +11,29 @@
 <div class="grid">
     @foreach (var item in Model)
     {
-    <div class="card">
-        <h3>
-            Title: @Html.DisplayFor(modelItem => item.Title)
-        </h3>
-        <h3>
-           Categories: @Html.DisplayFor(modelItem => item.Category)
-        </h3>
+        <div class="card">
+            <h3>
+                Title: @Html.DisplayFor(modelItem => item.Title)
+            </h3>
+            @if (!String.IsNullOrEmpty(item.ImageUrl))
+            {
+                <img src="@Url.Content(item.ImageUrl)" />
+            }
 
-        @if (!String.IsNullOrEmpty(item.ImageUrl))
-        {
-            <img src="@Url.Content(item.ImageUrl)" />
-        }
+            <p>
+                Rating: @Html.DisplayFor(modelItem => item.Rating) / 5
+            </p>
+            <p>
+                Category: @Html.DisplayFor(modelItem => item.Category)
+            </p>
+            <table class="table">
 
-        <p>
-            Rating: @Html.DisplayFor(modelItem => item.Rating) / 5
-        </p>
-        <table class="table">
-
-            <tr>
-                <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.Id })
-                </td>
-        </table>
-    </div>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = item.Id })
+                    </td>
+            </table>
+        </div>
 
 
     }
