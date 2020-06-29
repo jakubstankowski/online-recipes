@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.EnterpriseServices.Internal;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace OnlineRecipes.Models
 {
@@ -33,8 +34,10 @@ namespace OnlineRecipes.Models
         public string UserId { get; set; }
 
 
-        [Display(Name = "Category")]
-        public  RecipeCategory RecipeCategories { get; set; }
-        
+        public string Category { get; set; }
+        public IEnumerable<RecipeCategory> RecipeCategories { get; set; }
+
+      
+
     }
 }

@@ -207,6 +207,14 @@
     <Compile Include="Migrations\202006251754589_Add recipe category to recipe model.Designer.cs">
       <DependentUpon>202006251754589_Add recipe category to recipe model.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006271452554_Add harcode lista value to recipe.cs" />
+    <Compile Include="Migrations\202006271452554_Add harcode lista value to recipe.Designer.cs">
+      <DependentUpon>202006271452554_Add harcode lista value to recipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006291534108_Add Category to Recipe model.cs" />
+    <Compile Include="Migrations\202006291534108_Add Category to Recipe model.Designer.cs">
+      <DependentUpon>202006291534108_Add Category to Recipe model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -321,6 +329,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006251754589_Add recipe category to recipe model.resx">
       <DependentUpon>202006251754589_Add recipe category to recipe model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006271452554_Add harcode lista value to recipe.resx">
+      <DependentUpon>202006271452554_Add harcode lista value to recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006291534108_Add Category to Recipe model.resx">
+      <DependentUpon>202006291534108_Add Category to Recipe model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
