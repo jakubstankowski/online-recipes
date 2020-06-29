@@ -26,6 +26,7 @@ namespace OnlineRecipes.Controllers
             
             var recipes = db.Recipe.ToList();
 
+
             return View(recipes);
         }
 
@@ -107,11 +108,10 @@ namespace OnlineRecipes.Controllers
         // GET: Recipe/Create
         public ActionResult Create()
         {
-            var viewModel = new Recipe();
-            viewModel.RecipeCategories = db.RecipeCategories;
-
-
-            return View();
+            var recipe = new Recipe();
+            recipe.RecipeCategories = db.RecipeCategories.ToList();
+           
+            return View(recipe);
         }
 
         // POST: Recipe/Create
