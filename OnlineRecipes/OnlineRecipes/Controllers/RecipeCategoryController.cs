@@ -72,26 +72,49 @@ namespace OnlineRecipes.Controllers
             }
         }
 
-        // GET: RecipeCategory/Delete/5
-        public ActionResult Delete(int id)
+     
+
+        // GET: Recipe/Delete/5
+        [Authorize]
+        public ActionResult Delete(int? id)
         {
-            return View();
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
+            }
+
+
+            var recipe = db.Recipe.Find(id);
+
+            if (recipe == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(recipe);
+
+
         }
 
-        // POST: RecipeCategory/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
 
-                return RedirectToAction("Index");
-            }
-            catch
+        // GET: RecipeCategory/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            RecipeCategory recipeCategory = db.RecipeCategories.Find(id);
+
+            if (recipeCategory == null)
             {
-                return View();
+                return HttpNotFound();
             }
+
+            db.RecipeCategories.Remove(recipeCategory);
+            db.SaveChanges();
+            return RedirectToAction("RecipeCategory");
+
         }
     }
 }
