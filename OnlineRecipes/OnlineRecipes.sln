@@ -5,9 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineRecipes", "OnlineRecipes\OnlineRecipes.csproj", "{6F6651DB-16E9-438A-B2BE-D404E84BA74F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomatedTellerMachine", "..\..\..\INNE\C#\Asp Net\bank-mvc-5\Ex_Files_ASPNETMVC5_EssT\Exercise Files\Ch9\Final\AutomatedTellerMachine\AutomatedTellerMachine.csproj", "{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlipDrop", "..\..\..\INNE\C#\Asp Net\BlipDrop\BlipDrop\BlipDrop.csproj", "{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A11_RBS", "..\..\..\INNE\C#\Asp Net\role-security-mvc5\A11_RBS\A11_RBS.csproj", "{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +23,14 @@ Global
 		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Test|Any CPU.Build.0 = Release|Any CPU
 		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Testing|Any CPU.ActiveCfg = Release|Any CPU
 		{6F6651DB-16E9-438A-B2BE-D404E84BA74F}.Testing|Any CPU.Build.0 = Release|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Test|Any CPU.ActiveCfg = Test|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Test|Any CPU.Build.0 = Test|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Testing|Any CPU.ActiveCfg = Test|Any CPU
-		{7CAEB0A3-4FDF-44E6-845F-17716F639FD7}.Testing|Any CPU.Build.0 = Test|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Test|Any CPU.ActiveCfg = Release|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Test|Any CPU.Build.0 = Release|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Testing|Any CPU.ActiveCfg = Release|Any CPU
-		{D0BCDE5C-44BB-494D-A184-A8A79BE9C3FB}.Testing|Any CPU.Build.0 = Release|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Test|Any CPU.Build.0 = Release|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Testing|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7BA3BA-12D8-42A7-9B7B-7148D773DF80}.Testing|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
