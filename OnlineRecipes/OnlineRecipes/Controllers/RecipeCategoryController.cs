@@ -14,6 +14,7 @@ namespace OnlineRecipes.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: RecipeCategory
+        [Authorize]
         public ActionResult Index()
         {
             var recipeCategory = db.RecipeCategories.ToList();
@@ -85,14 +86,14 @@ namespace OnlineRecipes.Controllers
             }
 
 
-            var recipe = db.Recipe.Find(id);
+            var recipeCategory = db.RecipeCategories.Find(id);
 
-            if (recipe == null)
+            if (recipeCategory == null)
             {
                 return HttpNotFound();
             }
 
-            return View(recipe);
+            return View(recipeCategory);
 
 
         }
@@ -113,7 +114,7 @@ namespace OnlineRecipes.Controllers
 
             db.RecipeCategories.Remove(recipeCategory);
             db.SaveChanges();
-            return RedirectToAction("RecipeCategory");
+            return RedirectToAction("Index");
 
         }
     }

@@ -288,6 +288,7 @@
     <Content Include="Views\Recipe\UserRecipe.cshtml" />
     <Content Include="Views\RecipeCategory\Index.cshtml" />
     <Content Include="Views\RecipeCategory\Create.cshtml" />
+    <Content Include="Views\RecipeCategory\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
