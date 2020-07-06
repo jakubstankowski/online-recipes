@@ -27,7 +27,11 @@
                     {
 
                         <li>@Html.ActionLink("User Recipes", "UserRecipe", "Recipe")</li>
-                        <li>@Html.ActionLink("Recipe Category", "Index", "RecipeCategory")</li>
+                        if (User.IsInRole("Admin"))
+                        {
+                            <li>@Html.ActionLink("Recipe Category", "Index", "RecipeCategory")</li>
+                            <li>@Html.ActionLink("User Roles", "Index", "Role")</li>
+                        }
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")

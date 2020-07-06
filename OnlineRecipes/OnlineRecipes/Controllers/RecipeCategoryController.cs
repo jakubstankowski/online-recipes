@@ -15,6 +15,7 @@ namespace OnlineRecipes.Controllers
 
         // GET: RecipeCategory
         [Authorize]
+        [Authorize(Roles = "Admin")]
         public ActionResult Index()
         {
             var recipeCategory = db.RecipeCategories.ToList();
