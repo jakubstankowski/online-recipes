@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using OnlineRecipes.Models;
 
@@ -11,6 +12,7 @@ namespace OnlineRecipes.Controllers
     public class RoleController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        private ApplicationUserManager _userManager;
 
         // GET: Role
         public ActionResult Index()
@@ -32,17 +34,34 @@ namespace OnlineRecipes.Controllers
             return View();
         }
 
+        
+
         // POST: Role/Create
         [HttpPost]
-        public ActionResult Create(IdentityRole role)
+        public  ActionResult Create(IdentityRole role)
         {
             try
             {
                 // TODO: Add insert logic here
                 if (ModelState.IsValid)
                 {
+
+                    /*  var userId = User.Identity.GetUserId();
+                      var user = await _userManager.FindByIdAsync(model.userId);
+
+
+                      ApplicationUser user = db.Users.FirstOrDefault();
+  */
+                    var user = _userManager.FindById(User.Identity.GetUserId());
+
+                   /* var account = new AccountController();
+                    account.UserManager.AddToRoleAsync(user.Id, "Admin");*/
+
+                    _userManager.AddToRole(user.Id, "Admin");
+
+/*
                     db.Roles.Add(role);
-                    db.SaveChanges();
+                    db.SaveChanges();*/
                     return RedirectToAction("Index");
                 }
 

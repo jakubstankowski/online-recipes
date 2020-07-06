@@ -32,6 +32,7 @@ namespace OnlineRecipes.Controllers
         public ActionResult UserRecipe()
         {
             var userId = User.Identity.GetUserId();
+
             var recipe = db.Recipe.Where(c => c.UserId == userId).ToList();
             return View(recipe);
 
@@ -79,6 +80,7 @@ namespace OnlineRecipes.Controllers
             {
                 if (ModelState.IsValid)
                 {
+
                     recipe.UserId = User.Identity.GetUserId();
                     db.Recipe.Add(recipe);
                     db.SaveChanges();
